@@ -3,7 +3,6 @@ import './Header.css';
 import CTA from './CTA';
 import ME from '../../assets/ME.jpeg';
 import HeaderSocial from './HeaderSocial';
-import Typical from 'react-typical';
 
 const Header = () => {
   return (
