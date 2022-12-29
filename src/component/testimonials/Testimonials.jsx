@@ -4,7 +4,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import img1 from '../../assets/comment1.jpeg';
 import img2 from '../../assets/comment2.jpeg';
 import img3 from '../../assets/comment3.jpg';
-
+import img4 from '../../assets/E.png';
+import img5 from '../../assets/J.png';
+import img6 from '../../assets/G.png';
 // import Swiper core and required modules
 import { Pagination } from 'swiper';
 
@@ -26,7 +28,7 @@ const data = [
   },
   {
     id: 2,
-    avatar: img1,
+    avatar: img5,
     name: 'john marks',
 
     country: 'Germany',
@@ -44,7 +46,7 @@ const data = [
   },
   {
     id: 4,
-    avatar: img2,
+    avatar: img4,
     name: 'Eddy',
 
     country: 'Canada',
@@ -61,7 +63,7 @@ const data = [
   },
   {
     id: 6,
-    avatar: img3,
+    avatar: img6,
     name: 'gyuner',
 
     country: 'United Kingdom',
