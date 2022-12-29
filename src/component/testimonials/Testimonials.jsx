@@ -4,9 +4,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import img1 from '../../assets/comment1.jpeg';
 import img2 from '../../assets/comment2.jpeg';
 import img3 from '../../assets/comment3.jpg';
-import img4 from '../../assets/E.png';
-import img5 from '../../assets/J.png';
-import img6 from '../../assets/G.png';
+import img4 from '../../assets/E.jpg';
+import img5 from '../../assets/j.jpg';
+import img6 from '../../assets/G.jpg';
 // import Swiper core and required modules
 import { Pagination } from 'swiper';
 
