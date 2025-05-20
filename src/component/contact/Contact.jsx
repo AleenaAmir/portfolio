@@ -8,27 +8,7 @@ import { BsWhatsapp } from 'react-icons/bs';
 function Contact() {
   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        'service_yfyrq9l',
-        'template_4f46e57',
-        form.current,
-        'VIAYFIViAPVNw691D'
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-
-    e.target.reset();
-  };
+ 
 
   return (
     <section id="contact">
@@ -40,10 +20,10 @@ function Contact() {
             <article className="contact_option">
               <MdOutlineEmail className="contact-option-icon" />
               <h4>Email</h4>
-              <h5>junaid8597@gmail.com</h5>
+              <h5>aleenaghafoor239@gmail.com</h5>
 
               <a
-                href="mailto:junaid8597@gmail.com"
+                href="mailto:aleenaghafoor239@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -52,11 +32,11 @@ function Contact() {
             </article>
             <article className="contact_option">
               <RiMessengerLine className="contact-option-icon" />
-              <h4>Facebook / Massenger</h4>
-              <h5>Muhammad junaid</h5>
+              <h4>LinkedIn</h4>
+              <h5>Aleena Abdul Ghafoor</h5>
 
               <a
-                href="https://www.facebook.com/profile.php?id=100042252727835 "
+                href="www.linkedin.com/in/aleena-ghafoor-1a986b348 "
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -66,10 +46,10 @@ function Contact() {
             <article className="contact_option">
               <BsWhatsapp className="contact-option-icon" />
               <h4>Whatsapp</h4>
-              <h5>+923111474928</h5>
+              <h5>00971566272315</h5>
 
               <a
-                href="https://wa.me/+923111474928"
+                href="https://wa.me/+971566272315"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -78,7 +58,7 @@ function Contact() {
             </article>
           </div>
           {/* End of contact  options*/}
-          <form ref={form} method="post" onSubmit={sendEmail}>
+          <form action="https://formspree.io/f/mgvkezga" method="post" ref={form}>
             <input
               type="text"
               name="name"

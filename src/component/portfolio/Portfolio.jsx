@@ -1,7 +1,7 @@
 import React from 'react';
 import './Portfolio.css';
-import IMG1 from '../../assets/Ecommerce.jpg';
-import IMG2 from '../../assets/hotel1.jpg';
+import IMG1 from '../../assets/chak92.png';
+import IMG2 from '../../assets/sap1.png';
 import IMG3 from '../../assets/hotel2.jpg';
 import IMG4 from '../../assets/Managment.jpg';
 import IMG5 from '../../assets/marketting.png';
@@ -10,14 +10,14 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'Ecommerce website',
+    title: 'Property website',
     github: ' ',
     demo: '',
   },
   {
     id: 2,
     image: IMG2,
-    title: 'Hotel managment System',
+    title: 'Cloud Equate SAP',
     github: '',
     demo: '',
   },
@@ -61,7 +61,7 @@ const Portfolio = () => {
           return (
             <article key={id} className="portfolio_item">
               <div className="portfolio_item_img">
-                <img src={image} alt={title} />
+                <img src={image} alt={title}  height={200}/>
               </div>
               <h3> {title}</h3>
               <div className="portfolio_item_cta">

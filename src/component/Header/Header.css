@@ -1,89 +1,87 @@
-header {
-  height: 100vh;
-  padding-top: 7rem;
-  overflow: hidden;
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: black;
 }
 
-.header_container {
-  text-align: center;
-  height: 100%;
-  position: relative;
+.main-container {
+  width: 100%;
+  padding: 0 10rem;
+
+background: linear-gradient(90deg,rgba(240, 155, 170, 1) 0%, rgba(247, 192, 172, 1) 50%, rgba(240, 155, 170, 1) 100%);
 }
 
-.icons {
-  color: #4db5ff;
-  size: 1.5rem;
-}
-.icons:hover {
-  color: white;
-}
-
-/*===========================================CTA=======================================*/
-
-.cta {
-  margin-top: 2.5rem;
+.navbar {
   display: flex;
-  gap: 1.2rem;
-  justify-content: center;
-}
-
-/*===========================================HeaderSocial======================================*/
-
-.header_socials {
-  display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  gap: 0.8rem;
-  position: absolute;
-  left: 0;
-  bottom: 3rem;
+  padding: 1rem 0;
 }
 
-.header_socials::after {
-  content: '';
-  width: 1px;
-  height: 2rem;
-  background: var(--color-primary);
-}
-/*=========================================Image=======================================*/
-
-.my {
-  background: linear-gradient(var(--color-primary), transparent);
-
-  width: 20rem;
-  height: 300px;
-  position: absolute;
-  left: calc(50% - 11rem);
-  margin-top: 3rem;
-  border-radius: 12rem 12rem 0 0;
-  overflow: hidden;
-  /* padding: 5rem 1.5rem 1.5rem 1.5rem; */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #533b44;
 }
 
-/*=============================scrol==========================*/
-.Scroll_Down {
-  position: absolute;
-  right: -2.3rem;
-  bottom: 5rem;
-  transform: rotate(90deg);
-  font-weight: 300;
-  font-size: 0.9rem;
-  color: #4db5ff;
-}
-/*=========================Media Query (Medium devices)============================*/
-@media screen and(max-width:1024px) {
-  header {
-    height: 68vh;
-  }
+.nav-links a {
+  color: black;
+  margin: 0 1rem;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-/*=========================Media Query ( Small devices)============================*/
-@media screen and (max-width: 660px) {
-  header {
-    height: 100vh;
-  }
-  .header_socials,
-  .Scroll_Down {
-    display: none;
-  }
+.nav-links a:hover {
+  color: #533b44;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.content {
+  max-width: 50%;
+
+}
+
+.content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.contact-btn {
+  padding: 0.8rem 2rem;
+  background-color: #533b44;
+  border: none;
+  border-radius: 25px;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.contact-btn:hover {
+  background-color: #a26de1;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+.profile-pic img {
+  margin-bottom: 40px;
+  border-radius: 50%;
+  max-width: 300px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
 }

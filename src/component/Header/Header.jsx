@@ -1,43 +1,37 @@
-import React from 'react';
-import './Header.css';
-import CTA from './CTA';
-import ME from '../../assets/ME.jpeg';
-import HeaderSocial from './HeaderSocial';
+import React from "react";
+import me from "../../assets/me.jpg";
 
-const Header = () => {
+import "./Header.css";
+
+export default function Header() {
   return (
-    <header>
-      <div className="container header_container">
-        <h5>Hello</h5>
-        {/* <Typical
-          loop={Infinity}
-          steps={["I 'M", 1000, 'Muhammad junaid', 1000]}
-        /> */}
-        <h1> I'M Muhammad junaid</h1>
-        {/* {
-          (setTimeout(() => {
-            <h1> Muhammad junaid</h1>;
-          }),
-          1000)
-          setTimeout(() => {
-            console.log('This will run after 1 second!')
-          }, 1000);
-        } */}
+    <div className="main-container">
+      <header className="navbar">
+     
+        {/* <nav className="nav-links">
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </nav> */}
+      </header>
 
-        <h5 className="text-light">Full Stack Developer</h5>
-        <CTA />
-        <HeaderSocial />
-
-        <div className="my">
-          <img src={ME} alt="my" />
+      <section className="hero">
+        <div className="content">
+          <h2>Hello, I'm Aleena</h2>
+          <h3> Full Stack Developer</h3>
+          <p>
+           
+            From frontend interfaces to backend logic, I architect efficient, real-time systems.
+            I thrive in fast-paced environments, translating complex requirements into elegant, functional solutions—whether it’s a marketplace, management dashboard, or SaaS platform
+          </p>
+          <button className="contact-btn">Contact Me</button>
         </div>
-
-        <a href="#contact" className="Scroll_Down">
-          Scroll Down
-        </a>
-      </div>
-    </header>
+        <div className="profile-pic">
+          <img src={ me} alt="Aleena Ghafoor" />
+        </div>
+      </section>
+    </div>
   );
-};
-
-export default Header;
+}

@@ -10,12 +10,12 @@
   text-decoration: none;
 }
 :root {
-  --color-bg: #1f1f38;
-  --color-bg-variant: #2c2c6c;
-  --color-primary: #4db5ff;
-  --color-primary-variant: rgb(77, 181, 225, 0.4);
-  --color-white: #fff;
-  --color-light: rgba(255, 255, 255, 0.6);
+  --color-bg: #FFF8F0;
+  --color-bg-variant: #FCD5CE;
+  --color-primary: #FFB5A7;
+  --color-primary-variant: #F8EDEB;
+  --color-white: df74a4;
+  --color-light: #4A4A4A;
   --transition: all 400ms ease;
 
   --container-width-lg: 75%;
@@ -33,10 +33,12 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: var(--color-bg);
+  background: var(--color-gray);
   color: var(--color-white);
   line-height: 1.7;
-  background-image: url(../src/assets/bg-texture.png);
+  background: var(--color-bg);
+ 
+/* background: linear-gradient(90deg,rgba(240, 155, 170, 1) 0%, rgba(247, 192, 172, 1) 50%, rgba(240, 155, 170, 1) 100%); */
 }
 /*=======================General Styles======================*/
 .container {
@@ -60,7 +62,7 @@ section > h5 {
   color: var(--color-light);
 }
 section > h2 {
-  color: var(--color-primary);
+  color: var(--color-light);
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -70,7 +72,7 @@ section > h2 {
 }
 
 .a {
-  color: var(--color-primary);
+  color: var(--color-light);
   transition: var(--transition);
 }
 
@@ -81,7 +83,7 @@ a:hover {
 .btn {
   width: max-content;
   display: inline-block;
-  color: var(--color-primary);
+  color: var(--color-light);
   padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
   cursor: pointer;
@@ -90,12 +92,13 @@ a:hover {
 }
 
 .btn:hover {
-  background: var(--color-white);
-  color: var(--color-bg);
+  background: var(--color-light);
+  color: var(--color-primary);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .btn-primary {
-  background: var(--color-primary);
+  background: var(--color-light);
   color: var(--color-bg);
 }
 img {

@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import ME from '../../assets/ME.jpeg';
+import ME from '../../assets/me.jpg';
 import { FaAward } from 'react-icons/fa';
 import { FiUsers } from 'react-icons/fi';
 import { VscFolderLibrary } from 'react-icons/vsc';
@@ -35,12 +35,7 @@ const About = () => {
             </article>
           </div>
           <p className="text">
-            Hello , i M Muhammad junaid a Well-qualified Full Stack Developer
-            familiar with wide range of programming utilities and languages.
-            Knowledgeable of back-end and front-end development requirements.
-            Handles any part of process with ease. Collaborative team player
-            with excellent technical abilities offering 3 year of related
-            experience.
+            Hello , i M Aleena a Front-End Developer specializing in crafting interactive, responsive, and visually appealing web applications. With strong expertise in HTML, CSS, JavaScript, React.js, and modern frameworks like Next.js,Remix.js. I deliver seamless user experiences. My focus is on performance optimization, cross-browser compatibility, and mobile-first design, ensuring a smooth, engaging experience across all devices. I thrive on solving complex challenges and continuously seek innovative approaches to enhance web development.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's talk

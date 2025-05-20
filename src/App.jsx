@@ -10,7 +10,7 @@ import Testimonials from "./component/testimonials/Testimonials";
 import Portfolio from "./component/portfolio/Portfolio";
 const App = () => {
   return (
-    <>
+    < div className = "App">
       <Header />
       <Nav />
       <About />
@@ -20,7 +20,7 @@ const App = () => {
       <Testimonials />
       <Contact />
       <Footer />
-    </>
+    </  div>
   );
 };
 
